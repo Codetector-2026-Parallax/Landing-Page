@@ -172,6 +172,7 @@
         "icon": "Users",
         "statusText": "RECRUITMENT",
         "statusStyle": "primary",
+        "summary": "Cảnh sát tập hợp Đội Thám tử V để lần theo những dấu vết đầu tiên của vụ trộm.",
         "description": "Khi cuộc điều tra đứng trước bế tắc, cảnh sát quyết định tìm đến Đội Thám tử V — những người nổi tiếng bởi khả năng quan sát, suy luận và nhìn ra những mối liên hệ nằm sau những dấu vết tưởng như không cần thiết.",
         "details": [
           {
@@ -185,15 +186,6 @@
             "text": "Đội thám tử V bắt đầu từ những dấu vết nhỏ nhất tại hiện trường, từng bước dựng lại những gì đã xảy ra."
           }
         ],
-        "sqlSnippet": {
-          "filename": "case_init.sql",
-          "label": "CASE OPENED",
-          "lines": [
-            { "keyword": "INSERT INTO", "text": " detective_teams" },
-            { "keyword": "VALUES", "text": " ('TEAM_V', status := 'ACTIVE')" },
-            { "keyword": "-- ", "text": "Cuộc điều tra bắt đầu...", "isComment": true }
-          ]
-        },
         "footerLeft": "Hình thức: Online",
         "footerRight": "Đăng ký ngay →"
       },
@@ -206,6 +198,7 @@
         "icon": "Search",
         "statusText": "PURSUIT",
         "statusStyle": "primary",
+        "summary": "Những dấu vết đầu tiên dẫn dắt Đội thám tử V đến một thông tin bị che giấu trong hồ sơ vụ án. Nhưng ngay khi chạm đến manh mối, NULL xuất hiện — hắn công khai xâm nhập vào hệ thống an ninh của bảo tàng và liên tục tạo ra những manh mối giả.",
         "description": "Những dấu vết đầu tiên dẫn dắt Đội thám tử V đến một thông tin bị che giấu trong hồ sơ vụ án. Nhưng ngay khi chạm đến manh mối, NULL xuất hiện — hắn công khai xâm nhập vào hệ thống an ninh của bảo tàng và liên tục tạo ra những manh mối giả.",
         "details": [
           {
@@ -219,15 +212,6 @@
             "text": "Hiểu rõ thể thức thi đấu, tiêu chí chấm điểm và quy trình nộp bài."
           }
         ],
-        "sqlSnippet": {
-          "filename": "null_trace.sql",
-          "label": "ANOMALY DETECTED",
-          "lines": [
-            { "keyword": "SELECT", "text": " * FROM evidence_log" },
-            { "keyword": "WHERE", "text": " tampered_by = 'NULL'" },
-            { "keyword": "AND", "text": " is_genuine = FALSE;" }
-          ]
-        },
         "footerLeft": "Offline: AL-302L, ĐH FPT",
         "footerRight": "Phân biệt thật — giả"
       },
@@ -240,6 +224,7 @@
         "icon": "Astroid",
         "statusText": "FINAL CASE",
         "statusStyle": "primary",
+        "summary": "Đội V dần nhận ra rằng NULL không chỉ đang đánh cắp các hiện vật, mà đang cố che giấu toàn bộ câu chuyện phía sau vụ án. Những mảnh ghép cuối cùng được mở ra — các thám tử phải kết nối toàn bộ dấu vết và nhìn lại vụ án từ nhiều góc độ khác.",
         "description": "Đội V dần nhận ra rằng NULL không chỉ đang đánh cắp các hiện vật, mà đang cố che giấu toàn bộ câu chuyện phía sau vụ án. Những mảnh ghép cuối cùng được mở ra — các thám tử phải kết nối toàn bộ dấu vết và nhìn lại vụ án từ nhiều góc độ khác.",
         "details": [
           {
@@ -253,15 +238,6 @@
             "text": "Khi sự thật được vén màn, thân phận và mục đích của NULL cũng được hé lộ. Câu hỏi lớn nhất cuối cùng cũng có lời giải."
           }
         ],
-        "sqlSnippet": {
-          "filename": "final_verdict.sql",
-          "label": "CASE CLOSED",
-          "lines": [
-            { "keyword": "UPDATE", "text": " case_parallax" },
-            { "keyword": "SET", "text": " status = 'SOLVED'," },
-            { "keyword": "    ", "text": "truth = 'REVEALED';" }
-          ]
-        },
         "footerLeft": "Offline: ĐH FPT Hà Nội",
         "footerRight": "Vạch trần sự thật"
       }

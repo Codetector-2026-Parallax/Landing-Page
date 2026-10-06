@@ -22,7 +22,7 @@ function FAQ() {
         {items.map((item, index) => (
           <article
             key={item.question}
-            className="group flex min-w-0 flex-col rounded-2xl border border-primary/35 bg-background/85 p-5 shadow-[0_0_18px_rgba(202,160,82,0.08)] backdrop-blur-sm transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-1 hover:border-primary/70 hover:shadow-[0_0_25px_rgba(202,160,82,0.16)] sm:p-6"
+            className="content-panel group flex min-w-0 flex-col rounded-2xl border border-primary/35 p-5 shadow-[0_0_18px_rgba(202,160,82,0.08)] transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-1 hover:border-primary/70 hover:shadow-[0_0_25px_rgba(202,160,82,0.16)] sm:p-6"
           >
             <div className="flex items-start justify-between gap-3 border-b border-border/50 pb-4">
               <div className="flex size-10 shrink-0 items-center justify-center rounded-xl border border-primary/40 bg-primary/10 text-primary">

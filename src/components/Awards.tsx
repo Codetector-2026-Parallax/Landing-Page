@@ -30,7 +30,7 @@ function Awards() {
           return (
             <article
               key={item.rank}
-              className={`group relative flex ${heightClass} flex-col overflow-hidden rounded-2xl border p-5 shadow-[0_0_22px_rgba(202,160,82,0.12)] backdrop-blur-sm transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-2 hover:border-primary/75 hover:shadow-[0_0_28px_rgba(202,160,82,0.2)] ${
+              className={`content-panel group relative flex ${heightClass} flex-col overflow-hidden rounded-2xl border p-5 shadow-[0_0_22px_rgba(202,160,82,0.12)] transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-2 hover:border-primary/75 hover:shadow-[0_0_28px_rgba(202,160,82,0.2)] ${
                 isFirst
                   ? "border-primary/75 bg-primary/12"
                   : "border-primary/35 bg-background/85 hover:border-primary/65"

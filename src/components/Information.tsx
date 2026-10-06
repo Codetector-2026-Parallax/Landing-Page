@@ -39,7 +39,7 @@ function Information() {
             return (
               <div
                 key={index}
-                className="rounded-xl border border-primary/45 bg-background/85 p-4 shadow-[0_0_25px_rgba(202,160,82,0.14)] backdrop-blur-sm transition-colors hover:border-primary/70 sm:p-5"
+                className="content-panel rounded-xl border border-primary/45 p-4 shadow-[0_0_25px_rgba(202,160,82,0.14)] transition-colors hover:border-primary/70 sm:p-5"
               >
                 <div className="flex items-start gap-3">
                   <div className="flex size-9 shrink-0 items-center justify-center rounded-lg border border-primary/40 bg-primary/10 text-primary">

@@ -45,7 +45,7 @@ function Home() {
 
           {/* Cột phải: Hộp viền phát sáng - Thông tin cuộc thi */}
           <div className="w-full min-w-0">
-            <div className="rounded-2xl border border-primary/50 bg-background/85 p-5 shadow-[0_0_30px_rgba(202,160,82,0.18),inset_0_0_15px_rgba(202,160,82,0.04)] backdrop-blur-sm sm:p-8">
+            <div className="content-panel rounded-2xl border border-primary/50 p-5 shadow-[0_0_30px_rgba(202,160,82,0.18),inset_0_0_15px_rgba(202,160,82,0.04)] sm:p-8">
               <div className="flex items-center gap-3 pb-5 border-b border-border/60">
                 <Info className="size-6 text-primary" />
                 <h3 className="text-lg sm:text-xl font-bold text-foreground tracking-wide">

@@ -34,7 +34,7 @@ function CaseDossier() {
       </div>
 
       {/* Quick facts */}
-      <div className="mt-7 border-y border-primary/40 bg-background/65 px-1 py-4 backdrop-blur-sm sm:mt-8 sm:py-5">
+      <div className="content-panel mt-7 border-y border-primary/40 px-1 py-4 sm:mt-8 sm:py-5">
         <div className="grid min-w-0 grid-cols-1 gap-4 text-xs sm:grid-cols-3 sm:gap-0">
           {quickFacts.map((fact, index) => (
             <div key={index} className="space-y-1 border-l border-border/50 pl-4 sm:first:border-l-0">
@@ -59,7 +59,7 @@ function CaseDossier() {
 
       <div className="mt-7 grid min-w-0 items-stretch gap-6 sm:mt-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-6">
         {/* Crime scene */}
-        <div className="min-w-0 rounded-2xl border border-primary/45 bg-background/85 p-5 shadow-[0_0_25px_rgba(202,160,82,0.14)] backdrop-blur-sm flex flex-col justify-between sm:p-7">
+        <div className="content-panel min-w-0 rounded-2xl border border-primary/45 p-5 shadow-[0_0_25px_rgba(202,160,82,0.14)] flex flex-col justify-between sm:p-7">
           <div>
             <div className="flex items-center justify-between pb-4 border-b border-border/60">
               <div className="flex items-center gap-2.5">
@@ -73,7 +73,7 @@ function CaseDossier() {
               {crimeScene.description}
             </p>
 
-            <div className="mt-5 space-y-3 rounded-xl border border-border/50 bg-background/60 p-4 text-xs backdrop-blur-sm">
+            <div className="mt-5 space-y-3 rounded-xl border border-border/50 bg-background/75 p-4 text-xs">
               {crimeScene.clues.map((clue, index) => {
                 const ClueIcon = getIcon(clue.icon)
                 return (
@@ -96,7 +96,7 @@ function CaseDossier() {
         </div>
 
         {/* Adversary NULL */}
-        <div className="min-w-0 rounded-2xl border border-destructive/45 bg-background/90 p-5 shadow-[0_0_25px_rgba(202,80,60,0.12)] backdrop-blur-sm flex flex-col justify-between sm:p-6">
+        <div className="content-panel min-w-0 rounded-2xl border border-destructive/45 p-5 shadow-[0_0_25px_rgba(202,80,60,0.12)] flex flex-col justify-between sm:p-6">
           <div>
             <div className="flex items-center justify-between pb-4 border-b border-border/60">
               <div className="flex items-center gap-2.5">
@@ -112,7 +112,7 @@ function CaseDossier() {
               {adversary.description}
             </p>
 
-            <div className="mt-5 rounded-xl border border-border/60 bg-background/80 p-4 font-mono text-xs leading-relaxed backdrop-blur-sm">
+            <div className="mt-5 rounded-xl border border-border/60 bg-background/90 p-4 font-mono text-xs leading-relaxed">
               <div className="mb-2 flex items-center justify-between border-b border-border/40 pb-2 text-[10px] text-primary/80">
                 <span className="flex items-center gap-1.5">
                   <Terminal className="size-3" /> {adversary.sqlSnippet.filename}
