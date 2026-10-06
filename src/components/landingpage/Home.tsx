@@ -1,6 +1,6 @@
 import { ChevronDown, Info } from "lucide-react"
-import landingData from "../data/landingData.json"
-import { getIcon } from "../lib/iconMap"
+import landingData from "../../data/landingData.json"
+import { getIcon } from "../../lib/iconMap"
 
 function Home() {
   const { tag, title, subtitle, description, cta, competitionInfo } = landingData.home
@@ -27,12 +27,14 @@ function Home() {
             </p>
 
             <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:max-w-md sm:flex-row">
-              <button
-                type="button"
+              <a
+                href="https://forms.gle/FtYRvwTAYEwdiUaB8"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex w-full items-center justify-center gap-2 rounded-xl bg-primary px-4 py-3.5 text-xs font-bold uppercase tracking-[0.12em] text-primary-foreground shadow-[0_0_20px_rgba(202,160,82,0.3)] transition-colors hover:bg-primary/90 sm:tracking-[0.16em]"
               >
                 {cta.register}
-              </button>
+              </a>
 
               <a
                 href="https://docs.google.com/document/d/1P-TPuBqzSuzhYY8oYvdU7tJOPPR_T1wtwMzoCFVr1DA/edit?usp=sharing"

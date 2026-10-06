@@ -1,5 +1,5 @@
 import { HelpCircle } from "lucide-react"
-import landingData from "../data/landingData.json"
+import landingData from "../../data/landingData.json"
 import SectionLabel from "./shared/SectionLabel"
 
 function FAQ() {

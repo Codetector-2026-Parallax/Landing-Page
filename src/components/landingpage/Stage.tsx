@@ -1,6 +1,6 @@
 import { ChevronRight, Lock } from "lucide-react"
-import landingData from "../data/landingData.json"
-import { getIcon } from "../lib/iconMap"
+import landingData from "../../data/landingData.json"
+import { getIcon } from "../../lib/iconMap"
 import SectionLabel from "./shared/SectionLabel"
 
 function Stage() {

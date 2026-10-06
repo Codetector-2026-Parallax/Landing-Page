@@ -4,9 +4,9 @@ import {
   ShieldAlert,
   Terminal,
 } from "lucide-react"
-import landingData from "../data/landingData.json"
+import landingData from "../../data/landingData.json"
 import SectionLabel from "./shared/SectionLabel"
-import { getIcon } from "../lib/iconMap"
+import { getIcon } from "../../lib/iconMap"
 
 function CaseDossier() {
   const {

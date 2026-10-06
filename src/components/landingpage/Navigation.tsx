@@ -1,5 +1,5 @@
-import logoImage from "../assets/logo.png"
-import landingData from "../data/landingData.json"
+import logoImage from "../../assets/logo.png"
+import landingData from "../../data/landingData.json"
 
 function Navigation() {
   const { brand, badge, links } = landingData.navigation

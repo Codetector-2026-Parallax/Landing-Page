@@ -1,12 +1,12 @@
-import Home from "../components/Home"
-import Navigation from "../components/Navigation"
+import Home from "../components/landingpage/Home"
+import Navigation from "../components/landingpage/Navigation"
 import backgroundImage from "../assets/codetector-background.jpg"
-import Information from "../components/Information"
-import CaseDossier from "../components/Overview"
-import Stage from "../components/Stage"
-import Awards from "../components/Awards"
-import FAQ from "../components/FAQ"
-import Footer from "../components/Footer"
+import Information from "../components/landingpage/Information"
+import CaseDossier from "../components/landingpage/Overview"
+import Stage from "../components/landingpage/Stage"
+import Awards from "../components/landingpage/Awards"
+import FAQ from "../components/landingpage/FAQ"
+import Footer from "../components/landingpage/Footer"
 
 function LandingPage() {
   return (
