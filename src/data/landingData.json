@@ -1,0 +1,291 @@
+{
+  "navigation": {
+    "brand": "CØDETECTOR",
+    "badge": "Hồ sơ 2026",
+    "links": [
+      { "label": "Giới thiệu", "href": "#info" },
+      { "label": "Vụ án", "href": "#overview" },
+      { "label": "Chặng điều tra", "href": "#timeline" },
+      { "label": "Giải thưởng", "href": "#giai-thuong" },
+      { "label": "FAQ", "href": "#faq" }
+    ]
+  },
+  "home": {
+    "tag": "JS Club presents",
+    "title": "CODETECTOR",
+    "subtitle": "PARALLAX",
+    "description": "Một vụ trộm bí ẩn tại bảo tàng Aureum. Những dữ liệu bị che giấu. Ba chặng điều tra để vạch trần thủ phạm và sự thật bị che khuất qua những dòng lệnh SQL.",
+    "cta": {
+      "register": "Đăng ký tham gia",
+      "rules": "Xem thể lệ"
+    },
+    "competitionInfo": {
+      "title": "Thông tin cuộc thi",
+      "items": [
+        {
+          "icon": "ShieldCheck",
+          "title": "Đối tượng",
+          "description": "Thành viên JS Club."
+        },
+        {
+          "icon": "Users",
+          "title": "Hình thức đội thi",
+          "description": "Mỗi đội có 3 thành viên."
+        },
+        {
+          "icon": "Trophy",
+          "title": "Số lượng đội thi",
+          "description": "8 - 10 đội thi tham gia."
+        }
+      ]
+    }
+  },
+  "information": {
+    "sectionNumber": "01",
+    "sectionTitle": "GIỚI THIỆU",
+    "heading": "Kết nối dữ liệu",
+    "subheading": "Giải mã tư duy",
+    "description": [
+      "là sự kiện học thuật hướng đến việc xây dựng một môi trường thực hành nơi sinh viên có thể vận dụng kiến thức về cơ sở dữ liệu để giải quyết bài toán thực tế.",
+      "Không chỉ dừng lại ở việc viết code thông thường, cuộc thi khuyến khích thí sinh chủ động tìm hiểu, phân tích và giải quyết các vấn đề bằng tư duy lập trình và logic phá án."
+    ],
+    "pillars": [
+      {
+        "icon": "Database",
+        "title": "Vận dụng kiến thức SQL",
+        "description": "Bằng việc truy vấn SQL, các đội thi có thể xử lý các bảng dữ liệu thực tế, bóc tách và giải mã các luồng thông tin bị cố tình làm nhiễu."
+      },
+      {
+        "icon": "Search",
+        "title": "Tư duy Logic",
+        "description": "Không chỉ viết code, thí sinh cần kết nối từng mảnh chứng cứ (hình ảnh, tài liệu, âm thanh) thành chuỗi suy luận để tìm ra hung thủ."
+      },
+      {
+        "icon": "BrainCircuit",
+        "title": "Áp lực Thời gian & Tinh thần Đồng đội",
+        "description": "Rèn luyện phản xạ và kỹ năng giải quyết vấn đề dưới áp lực thời gian với độ khó tăng dần; đồng thời kết nối những người bạn cùng chí hướng."
+      }
+    ]
+  },
+  "awards": {
+    "sectionNumber": "04",
+    "sectionTitle": "GIẢI THƯỞNG",
+    "heading": "Vinh danh những",
+    "subheading": "người phá án xuất sắc",
+    "intro": "Mỗi lần suy luận đúng là một bước tiến gần hơn đến sự thật. Những đội thi xuất sắc nhất sẽ được vinh danh bằng các phần thưởng dành cho hành trình phá vụ án bí ẩn này.",
+    "items": [
+      {
+        "icon": "Trophy",
+        "rank": "01",
+        "title": "Giải Nhất",
+        "prize": "300.000 VNĐ",
+        "certificate": "THE GRAND CASE BREAKER"
+      },
+      {
+        "icon": "Crown",
+        "rank": "02",
+        "title": "Giải Nhì",
+        "prize": "200.000 VNĐ",
+        "certificate": "THE MASTER INVESTIGATOR"
+      },
+      {
+        "icon": "Medal",
+        "rank": "03",
+        "title": "Giải Ba",
+        "prize": "100.000 VNĐ",
+        "certificate": "THE ELITE CLUE FINDER"
+      },
+      {
+        "icon": "Star",
+        "rank": "04–05",
+        "title": "Giải Khuyến khích",
+        "prize": null,
+        "certificate": "THE RISING CASESEEKER"
+      }
+    ]
+  },
+  "caseDossier": {
+    "sectionNumber": "02",
+    "sectionTitle": "HỒ SƠ VỤ ÁN",
+    "heading": "Hiện trường vụ trộm.",
+    "subheading": "Đối đầu với NULL.",
+    "intro": "Tại bảo tàng Aureum, những hiện vật quý giá đã bị đánh cắp ngay trước ngày triển lãm. Một hồ sơ chuyên án bí ẩn đã được gửi đến riêng cho Đội Thám tử V.",
+    "quickFacts": [
+      { "label": "Hiện trường", "value": "Bảo tàng Aureum" },
+      { "label": "Hiện vật bị mất", "value": "Viên ngọc Parallax", "highlight": true },
+      { "label": "Đối tượng tình nghi", "value": "Nhân vật bí ẩn - \"NULL\"", "alert": true }
+    ],
+    "crimeScene": {
+      "title": "Hiện trường vụ án",
+      "badge": "AUREUM_ARCHIVE",
+      "description": "Đêm trước ngày khai mạc triển lãm cổ vật, tủ kính trưng bày trung tâm tại bảo tàng Aureum bị đập vỡ vụn. Các cổ vật quý giá biến mất không dấu vết. Hiện trường chỉ còn lại những mảnh kính vỡ cùng vài dấu vết bất thường nhưng không đủ để tìm ra kẻ gây án.",
+      "clues": [
+        {
+          "icon": "Search",
+          "label": "Ít manh mối",
+          "text": "Kẻ gây án không để lại bất kỳ dấu vết nào, buộc đội thám tử phải dựa vào khả năng quan sát và suy luận sắc bén."
+        },
+        {
+          "icon": "User",
+          "label": "Không nhân chứng",
+          "text": "Vụ việc xảy ra nhanh chóng khiến không ai nhận ra nhân dạng của kẻ gây án."
+        },
+        {
+          "icon": "Fingerprint",
+          "label": "Dữ liệu bị thao túng",
+          "text": "Mọi dấu vết dường như đều đã bị ai đó cố tình che giấu, làm nhiễu."
+        }
+      ],
+      "status": "Tình trạng: Hiện trường được phong tỏa",
+      "handover": "Cảnh sát bàn giao vụ án"
+    },
+    "adversary": {
+      "title": "Đối đầu với \"NULL\"",
+      "badge": "Hostile Threat",
+      "description": "Khi Đội Thám tử V chạm đến những manh mối đầu tiên, một nhân vật bí ẩn mang mật danh NULL bất ngờ xuất hiện. Hắn công khai đối đầu, liên tục tạo ra các chứng cứ giả mạo trong cơ sở dữ liệu nhằm đánh lạc hướng và thử thách năng lực suy luận của các thám tử.",
+      "sqlSnippet": {
+        "filename": "null_tamper_log.sql",
+        "status": "BREACH DETECTED",
+        "comment": "-- NULL INJECTION: DATA CORRUPTION",
+        "lines": [
+          { "keyword": "UPDATE", "text": " exhibition_vault" },
+          { "keyword": "SET", "text": " artifact_status = 'STOLEN', alibi = NULL" },
+          { "keyword": "WHERE", "text": " vault_id = 'AUREUM-PARALLAX';" }
+        ]
+      },
+      "objective": "Mục tiêu: Đội V phải phân biệt thật - giả để lật tẩy danh tính thực sự của NULL."
+    }
+  },
+  "investigation": {
+    "sectionNumber": "03",
+    "sectionTitle": "3 CHẶNG ĐIỀU TRA",
+    "heading": "Hành trình phá án.",
+    "subheading": "Thay đổi góc nhìn.",
+    "intro": "Từ việc tập hợp đội thám tử, truy vết kẻ phản diện đến vén màn toàn bộ sự thật — mỗi chặng là một bước tiến trong hành trình khám phá PARALLAX.",
+    "stages": [
+      {
+        "id": 1,
+        "phase": "CHẶNG 01",
+        "title": "Tập hợp Đội Thám tử V",
+        "subtitle": "Mở đơn đăng ký",
+        "date": "17/10 — 22/10",
+        "icon": "Users",
+        "statusText": "RECRUITMENT",
+        "statusStyle": "primary",
+        "description": "Khi cuộc điều tra đứng trước bế tắc, cảnh sát quyết định tìm đến Đội Thám tử V — những người nổi tiếng bởi khả năng quan sát, suy luận và nhìn ra những mối liên hệ nằm sau những dấu vết tưởng như không cần thiết.",
+        "details": [
+          {
+            "icon": "ClipboardList",
+            "label": "Đăng ký theo đội",
+            "text": "3 thành viên mỗi đội, đăng ký qua form online."
+          },
+          {
+            "icon": "Search",
+            "label": "Tiếp nhận hồ sơ",
+            "text": "Đội thám tử V bắt đầu từ những dấu vết nhỏ nhất tại hiện trường, từng bước dựng lại những gì đã xảy ra."
+          }
+        ],
+        "sqlSnippet": {
+          "filename": "case_init.sql",
+          "label": "CASE OPENED",
+          "lines": [
+            { "keyword": "INSERT INTO", "text": " detective_teams" },
+            { "keyword": "VALUES", "text": " ('TEAM_V', status := 'ACTIVE')" },
+            { "keyword": "-- ", "text": "Cuộc điều tra bắt đầu...", "isComment": true }
+          ]
+        },
+        "footerLeft": "Hình thức: Online",
+        "footerRight": "Đăng ký ngay →"
+      },
+      {
+        "id": 2,
+        "phase": "CHẶNG 02",
+        "title": "Truy vết NULL",
+        "subtitle": "Training",
+        "date": "22/10",
+        "icon": "Search",
+        "statusText": "PURSUIT",
+        "statusStyle": "primary",
+        "description": "Những dấu vết đầu tiên dẫn dắt Đội thám tử V đến một thông tin bị che giấu trong hồ sơ vụ án. Nhưng ngay khi chạm đến manh mối, NULL xuất hiện — hắn công khai xâm nhập vào hệ thống an ninh của bảo tàng và liên tục tạo ra những manh mối giả.",
+        "details": [
+          {
+            "icon": "GraduationCap",
+            "label": "Ôn tập SQL",
+            "text": "Các đội thi được ôn lại kiến thức cơ bản về truy vấn SQL để chuẩn bị cho vòng thi đấu."
+          },
+          {
+            "icon": "ShieldCheck",
+            "label": "Phổ biến thể lệ",
+            "text": "Hiểu rõ thể thức thi đấu, tiêu chí chấm điểm và quy trình nộp bài."
+          }
+        ],
+        "sqlSnippet": {
+          "filename": "null_trace.sql",
+          "label": "ANOMALY DETECTED",
+          "lines": [
+            { "keyword": "SELECT", "text": " * FROM evidence_log" },
+            { "keyword": "WHERE", "text": " tampered_by = 'NULL'" },
+            { "keyword": "AND", "text": " is_genuine = FALSE;" }
+          ]
+        },
+        "footerLeft": "Offline: AL-302L, ĐH FPT",
+        "footerRight": "Phân biệt thật — giả"
+      },
+      {
+        "id": 3,
+        "phase": "CHẶNG 03",
+        "title": "Vén màn sự thật",
+        "subtitle": "Thi đấu chính thức",
+        "date": "24/10",
+        "icon": "Astroid",
+        "statusText": "FINAL CASE",
+        "statusStyle": "primary",
+        "description": "Đội V dần nhận ra rằng NULL không chỉ đang đánh cắp các hiện vật, mà đang cố che giấu toàn bộ câu chuyện phía sau vụ án. Những mảnh ghép cuối cùng được mở ra — các thám tử phải kết nối toàn bộ dấu vết và nhìn lại vụ án từ nhiều góc độ khác.",
+        "details": [
+          {
+            "icon": "Swords",
+            "label": "Đối đầu trực tiếp",
+            "text": "Vận dụng SQL, tư duy logic và tinh thần đồng đội để phá giải vụ án dưới áp lực thời gian."
+          },
+          {
+            "icon": "Sparkles",
+            "label": "Vén màn PARALLAX",
+            "text": "Khi sự thật được vén màn, thân phận và mục đích của NULL cũng được hé lộ. Câu hỏi lớn nhất cuối cùng cũng có lời giải."
+          }
+        ],
+        "sqlSnippet": {
+          "filename": "final_verdict.sql",
+          "label": "CASE CLOSED",
+          "lines": [
+            { "keyword": "UPDATE", "text": " case_parallax" },
+            { "keyword": "SET", "text": " status = 'SOLVED'," },
+            { "keyword": "    ", "text": "truth = 'REVEALED';" }
+          ]
+        },
+        "footerLeft": "Offline: ĐH FPT Hà Nội",
+        "footerRight": "Vạch trần sự thật"
+      }
+    ]
+  },
+  "faq": {
+    "sectionNumber": "05",
+    "sectionTitle": "GIẢI ĐÁP",
+    "heading": "Những điều cần biết",
+    "subheading": "trước giờ phá án",
+    "intro": "Một vài thông tin quan trọng giúp các thí sinh chuẩn bị tốt hơn cho hành trình CODETECTOR 2026: PARALLAX.",
+    "items": [
+      {
+        "question": "Chưa biết code hoặc mới bắt đầu học thì có nên đăng ký tham gia không?",
+        "answer": "Có, hoàn toàn nên đăng ký. CODETECTOR: PARALLAX không chỉ là một cuộc thi liên quan đến lập trình mà còn yêu cầu tư duy logic để tìm ra các thông tin bị che giấu và vạch trần kẻ đã đánh cắp."
+      },
+      {
+        "question": "Các đội thi sẽ được hỗ trợ gì qua buổi Training?",
+        "answer": "Các đội thi sẽ được ôn lại kiến thức cơ bản về truy vấn SQL để hỗ trợ trong quá trình làm bài thi, hiểu tiêu chí chấm điểm và quy trình nộp bài thi. Buổi Training sẽ diễn ra vào ngày 22/10/2026 tại phòng AL-302L."
+      },
+      {
+        "question": "Thí sinh tham gia có quyền lợi gì?",
+        "answer": "Thí sinh khi tham gia sẽ được rèn luyện tư duy logic, nâng cao kỹ năng làm việc nhóm và phát triển năng lực lập trình."
+      }
+    ]
+  }
+}
