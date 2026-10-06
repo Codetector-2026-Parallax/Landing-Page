@@ -35,7 +35,9 @@ function Home() {
               </button>
 
               <a
-                href="#gioi-thieu"
+                href="https://docs.google.com/document/d/1P-TPuBqzSuzhYY8oYvdU7tJOPPR_T1wtwMzoCFVr1DA/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex w-full items-center justify-center gap-2 rounded-xl border border-border/80 bg-background/85 px-4 py-3.5 text-xs font-bold uppercase tracking-[0.12em] text-foreground transition-colors hover:border-primary/60 hover:bg-background/95 sm:tracking-[0.16em]"
               >
                 {cta.rules}
@@ -43,7 +45,6 @@ function Home() {
             </div>
           </div>
 
-          {/* Cột phải: Hộp viền phát sáng - Thông tin cuộc thi */}
           <div className="w-full min-w-0">
             <div className="content-panel rounded-2xl border border-primary/50 p-5 shadow-[0_0_30px_rgba(202,160,82,0.18),inset_0_0_15px_rgba(202,160,82,0.04)] sm:p-8">
               <div className="flex items-center gap-3 pb-5 border-b border-border/60">
