@@ -1,7 +1,7 @@
 import type { AuthError, Session, User } from "@supabase/supabase-js"
 import { supabase } from "../lib/supabase"
 
-const AUTH_DOMAIN = import.meta.env.VITE_AUTH_DOMAIN || "codetector.internal"
+const AUTH_DOMAIN = import.meta.env.AUTH_DOMAIN || "codetector.internal"
 
 export function formatUsernameToEmail(username: string): string {
   const trimmed = username.trim().toLowerCase()

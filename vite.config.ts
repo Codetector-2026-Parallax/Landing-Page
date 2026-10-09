@@ -7,6 +7,7 @@ import { compression } from 'vite-plugin-compression2'
 import { visualizer } from 'rollup-plugin-visualizer'
 
 export default defineConfig({
+  envPrefix: ['SUPABASE_', 'AUTH_'],
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] }),
