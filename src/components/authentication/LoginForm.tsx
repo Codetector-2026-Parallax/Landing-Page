@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { LockKeyhole, CheckCircle2, AlertTriangle, Loader2 } from "lucide-react"
 import { useForm } from "@tanstack/react-form"
 import { useNavigate } from "@tanstack/react-router"
@@ -25,6 +25,15 @@ export function LoginForm() {
   const { isAuthenticated, username: activeUser, signOut } = useAuth()
   const [errorMessage, setErrorMessage] = useState<string | null>(null)
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success">("idle")
+  const redirectTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  useEffect(() => {
+    return () => {
+      if (redirectTimeoutRef.current) {
+        clearTimeout(redirectTimeoutRef.current)
+      }
+    }
+  }, [])
 
   const form = useForm({
     defaultValues: {
@@ -42,7 +51,7 @@ export function LoginForm() {
         return
       }
       setSubmitStatus("success")
-      setTimeout(() => {
+      redirectTimeoutRef.current = setTimeout(() => {
         navigate({ to: "/empty" })
       }, 1000)
     },
@@ -50,8 +59,8 @@ export function LoginForm() {
 
   if (isAuthenticated && submitStatus !== "success") {
     return (
-      <section className="mx-auto w-full max-w-lg">
-        <div className="content-panel rounded-2xl border border-primary/50 p-6 text-center shadow-[0_0_45px_rgba(202,160,82,0.16)] sm:p-10">
+      <section className="animate-enter-scale mx-auto w-full max-w-lg" style={{ animationDelay: "300ms" }}>
+        <div className="content-panel rounded-2xl border border-primary/50 p-6 text-center shadow-[0_0_45px_rgba(202,160,82,0.16)] transition-shadow duration-500 focus-within:shadow-[0_0_55px_rgba(202,160,82,0.24)] sm:p-10">
           <CheckCircle2 className="mx-auto size-12 text-primary" />
           <h2 className="mt-4 font-display text-3xl font-semibold text-foreground">Đã xác thực</h2>
           <p className="mt-2 text-sm text-muted-foreground">
@@ -61,14 +70,14 @@ export function LoginForm() {
             <button
               type="button"
               onClick={() => navigate({ to: "/empty" })}
-              className="flex h-11 flex-1 items-center justify-center rounded-lg bg-primary px-4 text-xs font-bold uppercase tracking-[0.16em] text-primary-foreground hover:bg-primary/90"
+              className="flex h-11 flex-1 items-center justify-center rounded-lg bg-primary px-4 text-xs font-bold uppercase tracking-[0.16em] text-primary-foreground transition-all hover:-translate-y-0.5 hover:bg-primary/90 active:translate-y-0 active:scale-[0.98]"
             >
               Bắt đầu phá án
             </button>
             <button
               type="button"
               onClick={() => signOut()}
-              className="flex h-11 flex-1 items-center justify-center rounded-lg border border-border px-4 text-xs font-bold uppercase tracking-[0.16em] text-muted-foreground hover:text-foreground"
+              className="flex h-11 flex-1 items-center justify-center rounded-lg border border-border px-4 text-xs font-bold uppercase tracking-[0.16em] text-muted-foreground transition-all hover:-translate-y-0.5 hover:text-foreground active:translate-y-0 active:scale-[0.98]"
             >
               Đăng xuất
             </button>
@@ -79,8 +88,8 @@ export function LoginForm() {
   }
 
   return (
-    <section className="mx-auto w-full max-w-lg">
-      <div className="content-panel rounded-2xl border border-primary/50 p-6 shadow-[0_0_45px_rgba(202,160,82,0.16)] sm:p-10">
+    <section className="animate-enter-scale mx-auto w-full max-w-lg" style={{ animationDelay: "300ms" }}>
+      <div className="content-panel rounded-2xl border border-primary/50 p-6 shadow-[0_0_45px_rgba(202,160,82,0.16)] transition-shadow duration-500 focus-within:shadow-[0_0_55px_rgba(202,160,82,0.24)] sm:p-10">
         <div className="mb-8 lg:hidden">
           <div className="flex items-center gap-3">
             <img src={logoImage} alt="JS Club logo" className="size-9 object-contain" />
@@ -105,7 +114,7 @@ export function LoginForm() {
           {errorMessage && (
             <div
               role="alert"
-              className="flex items-center gap-2 rounded-lg border border-destructive/40 bg-destructive/10 p-3 text-xs leading-relaxed text-destructive"
+              className="animate-enter-up flex items-center gap-2 rounded-lg border border-destructive/40 bg-destructive/10 p-3 text-xs leading-relaxed text-destructive"
             >
               <AlertTriangle className="size-4 shrink-0 text-destructive" />
               <span>{errorMessage}</span>
@@ -155,7 +164,7 @@ export function LoginForm() {
               <button
                 type="submit"
                 disabled={!canSubmit || isSubmitting}
-                className="flex h-12 w-full items-center justify-center gap-2 rounded-lg bg-primary px-4 text-xs font-bold uppercase tracking-[0.16em] text-primary-foreground shadow-[0_0_22px_rgba(202,160,82,0.25)] transition-all hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-60"
+                className="flex h-12 w-full items-center justify-center gap-2 rounded-lg bg-primary px-4 text-xs font-bold uppercase tracking-[0.16em] text-primary-foreground shadow-[0_0_22px_rgba(202,160,82,0.25)] transition-all hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-[0_0_30px_rgba(202,160,82,0.35)] active:translate-y-0 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {isSubmitting ? (
                   <>
@@ -173,7 +182,7 @@ export function LoginForm() {
           />
 
           {submitStatus === "success" && (
-            <div role="status" className="flex items-center justify-center gap-2 rounded-lg border border-primary/45 bg-primary/10 p-3 text-center text-xs leading-relaxed text-primary">
+            <div role="status" className="animate-enter-up flex items-center justify-center gap-2 rounded-lg border border-primary/45 bg-primary/10 p-3 text-center text-xs leading-relaxed text-primary">
               <CheckCircle2 className="size-4 shrink-0 text-primary" />
               <span>Đăng nhập thành công! Chuẩn bị hành trình phá án...</span>
             </div>

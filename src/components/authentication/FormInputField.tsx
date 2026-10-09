@@ -53,12 +53,12 @@ export function FormInputField({
           value={value}
           onBlur={onBlur}
           onChange={(e) => onChange(e.target.value)}
-          className={`h-12 w-full rounded-lg border bg-background/70 px-4 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/60 ${
+          className={`h-12 w-full rounded-lg border bg-background/70 px-4 text-sm text-foreground outline-none transition-all duration-200 placeholder:text-muted-foreground/60 ${
             isPassword ? "pr-12" : ""
           } ${
             hasError
-              ? "border-destructive focus:border-destructive focus:ring-1 focus:ring-destructive/50"
-              : "border-border/80 focus:border-primary focus:ring-1 focus:ring-primary/50"
+              ? "border-destructive focus:border-destructive focus:ring-1 focus:ring-destructive/50 focus:shadow-[0_0_16px_rgba(180,60,45,0.18)]"
+              : "border-border/80 focus:border-primary focus:ring-1 focus:ring-primary/50 focus:shadow-[0_0_18px_rgba(202,160,82,0.16)]"
           }`}
         />
 

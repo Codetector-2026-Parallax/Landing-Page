@@ -1,4 +1,3 @@
-import BackgroundOverlay from "../components/shared/BackgroundOverlay"
 import {
   Navigation,
   Home,
@@ -13,7 +12,6 @@ import {
 function LandingPage() {
   return (
     <div className="relative min-h-screen overflow-hidden text-foreground">
-      <BackgroundOverlay variant="landing" />
       <Navigation />
       <main>
         <Home />

@@ -1,17 +1,14 @@
 import { ArrowLeft } from "lucide-react"
 import { Link } from "@tanstack/react-router"
-import BackgroundOverlay from "../components/shared/BackgroundOverlay"
 import { LoginHero, LoginForm } from "../components/authentication"
 
 function LoginPage() {
   return (
     <main className="relative min-h-screen overflow-hidden text-foreground">
-      <BackgroundOverlay variant="login" />
-
       <Link
         to="/"
         preload="intent"
-        className="absolute left-5 top-5 z-10 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-muted-foreground transition-colors hover:text-primary sm:left-8 sm:top-8"
+        className="animate-enter-down absolute left-5 top-5 z-10 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-muted-foreground transition-colors hover:text-primary sm:left-8 sm:top-8"
       >
         <ArrowLeft className="size-4" />
         Về trang chủ
