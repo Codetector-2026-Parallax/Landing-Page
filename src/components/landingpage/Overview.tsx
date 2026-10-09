@@ -1,11 +1,6 @@
-import {
-  AlertTriangle,
-  Landmark,
-  ShieldAlert,
-  Terminal,
-} from "lucide-react"
+import { Landmark, ShieldAlert, Terminal, AlertTriangle } from "lucide-react"
 import landingData from "../../data/landingData.json"
-import SectionLabel from "./shared/SectionLabel"
+import SectionHeader from "./shared/SectionHeader"
 import { getIcon } from "../../lib/iconMap"
 
 function CaseDossier() {
@@ -22,16 +17,13 @@ function CaseDossier() {
 
   return (
     <section id="overview" className="mx-auto max-w-7xl scroll-mt-20 px-4 py-12 sm:px-5 sm:py-14 lg:px-8">
-      <div className="max-w-3xl space-y-4">
-        <SectionLabel number={sectionNumber}>{sectionTitle}</SectionLabel>
-        <h2 className="font-display text-3xl font-semibold leading-tight text-foreground sm:text-5xl">
-          {heading}<br />
-          <span className="gold-text">{subheading}</span>
-        </h2>
-        <p className="text-sm sm:text-base leading-relaxed text-muted-foreground">
-          {intro}
-        </p>
-      </div>
+      <SectionHeader
+        number={sectionNumber}
+        title={sectionTitle}
+        heading={heading}
+        subheading={subheading}
+        intro={intro}
+      />
 
       <div className="content-panel mt-7 border-y border-primary/40 px-1 py-4 sm:mt-8 sm:py-5">
         <div className="grid min-w-0 grid-cols-1 gap-4 text-xs sm:grid-cols-2 sm:gap-0">
@@ -42,9 +34,7 @@ function CaseDossier() {
               </span>
               <p
                 className={`font-semibold sm:text-sm ${
-                  fact.alert
-                    ? "font-mono font-bold text-destructive"
-                    : "text-foreground"
+                  fact.alert ? "font-mono font-bold text-destructive" : "text-foreground"
                 }`}
               >
                 {fact.value}

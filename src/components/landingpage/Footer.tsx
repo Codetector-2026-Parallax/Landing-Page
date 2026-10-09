@@ -21,7 +21,7 @@ function Footer() {
           <a
             href="https://www.facebook.com/fu.jsclub"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-lg border border-primary/30 bg-primary/10 px-3.5 py-2 text-xs font-bold text-primary transition-colors hover:border-primary/70 hover:bg-primary/15"
           >
             Fanpage JS Club

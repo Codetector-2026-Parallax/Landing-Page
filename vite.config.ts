@@ -1,13 +1,50 @@
 import react, { reactCompilerPreset } from '@vitejs/plugin-react'
 import babel from '@rolldown/plugin-babel'
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
+import { compression } from 'vite-plugin-compression2'
+import { visualizer } from 'rollup-plugin-visualizer'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] }),
     tailwindcss(),
+    ViteImageOptimizer({
+      png: { quality: 85 },
+      jpeg: { quality: 80 },
+      webp: { quality: 80, lossless: false },
+      avif: { quality: 75, lossless: false },
+    }),
+    compression({
+      algorithms: ['brotliCompress', 'gzip'],
+      exclude: [/\.(br)$/, /\.(gz)$/],
+      threshold: 1024,
+    }),
+    visualizer({
+      filename: 'dist/stats.html',
+      gzipSize: true,
+      brotliSize: true,
+      open: false,
+    }),
   ],
+
+  build: {
+    sourcemap: false,
+    target: 'es2022',
+    cssMinify: true,
+    rollupOptions: {
+      output: {
+        manualChunks(id: string) {
+          if (id.includes('@tanstack/react-router') || id.includes('@tanstack/react-form')) {
+            return 'tanstack-vendor'
+          }
+          if (id.includes('lucide-react')) {
+            return 'lucide-icons'
+          }
+        },
+      },
+    },
+  },
 })

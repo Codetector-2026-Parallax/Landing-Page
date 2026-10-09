@@ -1,21 +1,20 @@
 import { ChevronRight, Lock } from "lucide-react"
 import landingData from "../../data/landingData.json"
 import { getIcon } from "../../lib/iconMap"
-import SectionLabel from "./shared/SectionLabel"
+import SectionHeader from "./shared/SectionHeader"
 
 function Stage() {
   const { sectionNumber, sectionTitle, heading, subheading, intro, stages } = landingData.investigation
 
   return (
     <section id="timeline" className="mx-auto max-w-7xl scroll-mt-20 px-4 py-10 sm:px-5 sm:py-12 lg:px-8">
-      <div className="max-w-3xl space-y-4">
-        <SectionLabel number={sectionNumber}>{sectionTitle}</SectionLabel>
-        <h2 className="font-display text-3xl font-semibold leading-tight text-foreground sm:text-5xl">
-          {heading}<br />
-          <span className="gold-text">{subheading}</span>
-        </h2>
-        <p className="text-sm leading-relaxed text-muted-foreground sm:text-base">{intro}</p>
-      </div>
+      <SectionHeader
+        number={sectionNumber}
+        title={sectionTitle}
+        heading={heading}
+        subheading={subheading}
+        intro={intro}
+      />
 
       <div className="relative mt-8 sm:mt-10">
         <div className="absolute bottom-5 left-4 top-5 w-px bg-linear-to-b from-primary/60 via-primary/30 to-primary/10 sm:left-5" />

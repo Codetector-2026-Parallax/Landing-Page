@@ -151,33 +151,27 @@
   ::selection { background: var(--color-primary); color: var(--color-primary-foreground); }
 }
 
-@utility evidence-line {
-  background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
-}
-
 @utility gold-text {
   background: linear-gradient(180deg, var(--color-gold-soft), var(--color-gold));
   background-clip: text;
   color: transparent;
 }
 
-@utility dossier-panel {
-  border: 1px solid var(--color-border);
-  background: color-mix(in oklab, var(--color-card) 90%, transparent);
-  box-shadow: 0 24px 70px oklch(0 0 0 / 35%);
-}
-
 @utility content-panel {
-  background: color-mix(in oklab, var(--color-background) 78%, transparent);
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
-  contain: paint;
+  background: color-mix(in oklab, var(--color-background) 80%, transparent);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  isolation: isolate;
+  transform: translateZ(0);
+  overflow: hidden;
+  background-clip: padding-box;
 }
 
-@media (prefers-reduced-motion: reduce), (max-width: 640px) {
+@media (max-width: 640px) {
   .content-panel {
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
+    background: color-mix(in oklab, var(--color-background) 88%, transparent);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
   }
 }
 

@@ -1,22 +1,20 @@
 import { HelpCircle } from "lucide-react"
 import landingData from "../../data/landingData.json"
-import SectionLabel from "./shared/SectionLabel"
+import SectionHeader from "./shared/SectionHeader"
 
 function FAQ() {
   const { sectionNumber, sectionTitle, heading, subheading, intro, items } = landingData.faq
 
   return (
     <section id="faq" className="mx-auto max-w-7xl scroll-mt-20 px-4 py-12 sm:px-5 sm:py-14 lg:px-8">
-      <div className="mx-auto max-w-3xl space-y-4 text-center">
-        <div className="flex justify-center">
-          <SectionLabel number={sectionNumber}>{sectionTitle}</SectionLabel>
-        </div>
-        <h2 className="font-display text-3xl font-semibold leading-tight text-foreground sm:text-5xl">
-          {heading}<br />
-          <span className="gold-text">{subheading}</span>
-        </h2>
-        <p className="text-sm leading-relaxed text-muted-foreground sm:text-base">{intro}</p>
-      </div>
+      <SectionHeader
+        number={sectionNumber}
+        title={sectionTitle}
+        heading={heading}
+        subheading={subheading}
+        intro={intro}
+        center
+      />
 
       <div className="mt-8 grid min-w-0 gap-4 sm:mt-10 lg:grid-cols-3">
         {items.map((item, index) => (

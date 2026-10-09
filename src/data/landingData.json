@@ -1,12 +1,12 @@
 {
   "navigation": {
     "brand": "CØDETECTOR",
-    "badge": "AUREUM-2026",
+    "badge": "BẮT ĐẦU PHÁ ÁN",
     "links": [
       { "label": "Giới thiệu", "href": "#info" },
       { "label": "Vụ án", "href": "#overview" },
       { "label": "Chặng điều tra", "href": "#timeline" },
-      { "label": "Giải thưởng", "href": "#giai-thuong" },
+      { "label": "Giải thưởng", "href": "#awards" },
       { "label": "FAQ", "href": "#faq" }
     ]
   },
@@ -44,7 +44,7 @@
     "sectionNumber": "01",
     "sectionTitle": "GIỚI THIỆU",
     "heading": "Kết nối dữ liệu",
-    "subheading": "Giải mã tư duy",
+    "subheading": "Giải mã tư duy.",
     "description": [
       "là sự kiện học thuật hướng đến việc xây dựng một môi trường thực hành nơi sinh viên có thể vận dụng kiến thức về cơ sở dữ liệu để giải quyết bài toán thực tế.",
       "Không chỉ dừng lại ở việc viết code thông thường, cuộc thi khuyến khích thí sinh chủ động tìm hiểu, phân tích và giải quyết các vấn đề bằng tư duy lập trình và logic phá án."
@@ -97,7 +97,7 @@
       },
       {
         "icon": "Star",
-        "rank": "04–05",
+        "rank": "04–10",
         "title": "Giải Khuyến khích",
         "prize": null,
         "certificate": "THE RISING CASESEEKER"
@@ -107,7 +107,7 @@
   "caseDossier": {
     "sectionNumber": "02",
     "sectionTitle": "HỒ SƠ VỤ ÁN",
-    "heading": "Hiện trường vụ trộm.",
+    "heading": "Hiện trường vụ trộm",
     "subheading": "Đối đầu với NULL.",
     "intro": "Tại bảo tàng Aureum, những hiện vật quý giá đã bị đánh cắp ngay trước ngày triển lãm. Một hồ sơ chuyên án bí ẩn đã được gửi đến riêng cho Đội Thám tử V.",
     "quickFacts": [
@@ -158,7 +158,7 @@
   "investigation": {
     "sectionNumber": "03",
     "sectionTitle": "3 CHẶNG ĐIỀU TRA",
-    "heading": "Hành trình phá án.",
+    "heading": "Hành trình phá án",
     "subheading": "Thay đổi góc nhìn.",
     "intro": "Từ việc tập hợp đội thám tử, truy vết kẻ phản diện đến vén màn toàn bộ sự thật — mỗi chặng là một bước tiến trong hành trình khám phá PARALLAX.",
     "stages": [
@@ -211,7 +211,7 @@
             "text": "Hiểu rõ thể thức thi đấu, tiêu chí chấm điểm và quy trình nộp bài."
           }
         ],
-        "footerLeft": "Offline: AL-302L, ĐH FPT",
+        "footerLeft": "Hình thức: Offline, AL-302L ĐH FPT",
         "footerRight": "Phân biệt thật — giả"
       },
       {
@@ -237,7 +237,7 @@
             "text": "Khi sự thật được vén màn, thân phận và mục đích của NULL cũng được hé lộ. Câu hỏi lớn nhất cuối cùng cũng có lời giải."
           }
         ],
-        "footerLeft": "Offline: ĐH FPT Hà Nội",
+        "footerLeft": "Hình thức: Offline, AL-302L ĐH FPT",
         "footerRight": "Vạch trần sự thật"
       }
     ]

@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router"
 import logoImage from "../../assets/logo.png"
 import landingData from "../../data/landingData.json"
 
@@ -18,9 +19,13 @@ function Navigation() {
             </a>
           ))}
         </div>
-        <span className="shrink-0 border border-primary/50 px-2 py-1 text-[9px] font-bold uppercase tracking-[0.12em] text-primary sm:px-3 sm:py-1.5 sm:text-[10px] sm:tracking-[0.18em]">
+        <Link
+          to="/login"
+          preload="intent"
+          className="shrink-0 rounded-sm border border-primary/50 px-2.5 py-1 text-[9px] font-bold uppercase tracking-[0.12em] text-primary transition-all hover:border-primary hover:bg-primary/15 sm:px-3 sm:py-1.5 sm:text-[10px] sm:tracking-[0.18em]"
+        >
           {badge}
-        </span>
+        </Link>
       </div>
     </header>
   )

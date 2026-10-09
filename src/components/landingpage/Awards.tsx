@@ -1,20 +1,19 @@
 import landingData from "../../data/landingData.json"
-import SectionLabel from "./shared/SectionLabel"
+import SectionHeader from "./shared/SectionHeader"
 import { getIcon } from "../../lib/iconMap"
 
 function Awards() {
   const { sectionNumber, sectionTitle, heading, subheading, intro, items } = landingData.awards
 
   return (
-    <section id="giai-thuong" className="mx-auto max-w-7xl scroll-mt-20 px-4 py-12 sm:px-5 sm:py-14 lg:px-8">
-      <div className="max-w-3xl space-y-4">
-        <SectionLabel number={sectionNumber}>{sectionTitle}</SectionLabel>
-        <h2 className="font-display text-3xl font-semibold leading-tight text-foreground sm:text-5xl">
-          {heading}<br />
-          <span className="gold-text">{subheading}</span>
-        </h2>
-        <p className="text-sm leading-relaxed text-muted-foreground sm:text-base">{intro}</p>
-      </div>
+    <section id="awards" className="mx-auto max-w-7xl scroll-mt-20 px-4 py-12 sm:px-5 sm:py-14 lg:px-8">
+      <SectionHeader
+        number={sectionNumber}
+        title={sectionTitle}
+        heading={heading}
+        subheading={subheading}
+        intro={intro}
+      />
 
       <div className="mt-8 grid min-w-0 items-end gap-4 sm:mt-10 sm:grid-cols-2 lg:grid-cols-4">
         {items.map((item, index) => {
